@@ -1,0 +1,13 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: size"
+"org.jvmbenchmark.measure1.ArrayVsLinked.array","avgt",4,5,7.101072,0.225906,"ns/op",1
+"org.jvmbenchmark.measure1.ArrayVsLinked.array","avgt",4,5,84.283189,5.230680,"ns/op",100
+"org.jvmbenchmark.measure1.ArrayVsLinked.array","avgt",4,5,9990.780775,505.310824,"ns/op",10000
+"org.jvmbenchmark.measure1.ArrayVsLinked.array","avgt",4,5,3221622.918879,819567.261334,"ns/op",1000000
+"org.jvmbenchmark.measure1.ArrayVsLinked.ints","avgt",4,5,6.862196,0.424909,"ns/op",1
+"org.jvmbenchmark.measure1.ArrayVsLinked.ints","avgt",4,5,55.208068,4.689821,"ns/op",100
+"org.jvmbenchmark.measure1.ArrayVsLinked.ints","avgt",4,5,4297.143478,38.266397,"ns/op",10000
+"org.jvmbenchmark.measure1.ArrayVsLinked.ints","avgt",4,5,505412.821558,20725.437395,"ns/op",1000000
+"org.jvmbenchmark.measure1.ArrayVsLinked.linked","avgt",4,5,5.586701,0.386348,"ns/op",1
+"org.jvmbenchmark.measure1.ArrayVsLinked.linked","avgt",4,5,227.948465,18.629737,"ns/op",100
+"org.jvmbenchmark.measure1.ArrayVsLinked.linked","avgt",4,5,21756.473243,3441.184671,"ns/op",10000
+"org.jvmbenchmark.measure1.ArrayVsLinked.linked","avgt",4,5,6215186.742764,4831749.701630,"ns/op",1000000

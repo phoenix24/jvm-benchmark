@@ -1,0 +1,10 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: length"
+"org.jvmbenchmark.measure3.LoopSum.formula1","avgt",4,5,10.892220,15.837806,"ns/op",1395
+"org.jvmbenchmark.measure3.LoopSum.formula1","avgt",4,5,8.685185,10.692258,"ns/op",1396
+"org.jvmbenchmark.measure3.LoopSum.formula1","avgt",4,5,5.493706,0.365701,"ns/op",1397
+"org.jvmbenchmark.measure3.LoopSum.formula2","avgt",4,5,9.772451,18.194938,"ns/op",1395
+"org.jvmbenchmark.measure3.LoopSum.formula2","avgt",4,5,6.249907,0.765680,"ns/op",1396
+"org.jvmbenchmark.measure3.LoopSum.formula2","avgt",4,5,6.086385,0.189151,"ns/op",1397
+"org.jvmbenchmark.measure3.LoopSum.loopsum","avgt",4,5,642.155692,72.517751,"ns/op",1395
+"org.jvmbenchmark.measure3.LoopSum.loopsum","avgt",4,5,626.799431,7.982373,"ns/op",1396
+"org.jvmbenchmark.measure3.LoopSum.loopsum","avgt",4,5,646.477646,162.100356,"ns/op",1397
