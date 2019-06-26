@@ -21,6 +21,11 @@ import java.util.concurrent.TimeUnit;
 public class HugeMethod {
 
     @Benchmark
+    public int baseline() {
+        return 0;
+    }
+
+    @Benchmark
     public int sum1395() {
         int result = 0;
         result += 1; result += 2; result += 3; result += 4; result += 5; result += 6; result += 7; result += 8; result += 9; result += 10;

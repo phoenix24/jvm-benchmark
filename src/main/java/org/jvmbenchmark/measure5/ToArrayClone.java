@@ -330,6 +330,10 @@ public class ToArrayClone {
     };
 
     @Benchmark
+    public void baseline() {
+    }
+
+    @Benchmark
     public void str_arr_copy0() {
         Object[] dest = new Object[arr2.length];
         System.arraycopy(arr2, 0, dest, 0, arr2.length);

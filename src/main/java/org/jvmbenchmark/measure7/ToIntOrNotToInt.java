@@ -38,7 +38,7 @@ public class ToIntOrNotToInt {
     }
 
     @Benchmark
-    public void noop() {}
+    public void baseline() {}
 
     @Benchmark
     public void newInteger(Blackhole blackhole) {

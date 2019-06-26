@@ -28,6 +28,10 @@ public class StringConcat {
     static final int another3 = 1 << 30;
 
     @Benchmark
+    public void baseline() {
+    }
+
+    @Benchmark
     public String concat00() {
         return "" + another0;
     }

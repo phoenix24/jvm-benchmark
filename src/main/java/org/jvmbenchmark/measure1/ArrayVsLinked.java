@@ -70,6 +70,10 @@ public class ArrayVsLinked {
     }
 
     @Benchmark
+    public void baseline() {
+    }
+
+    @Benchmark
     public int ints() {
         int v = 0;
         for (int i = 0; i < ints.length; i++) {

@@ -1,0 +1,13 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: range"
+"org.jvmbenchmark.measure7.ToIntOrNotToInt.newInteger","avgt",4,10,16241073.301728,5938168.909057,"ns/op",100
+"org.jvmbenchmark.measure7.ToIntOrNotToInt.newInteger","avgt",4,10,22656945.390685,21446846.467427,"ns/op",1000
+"org.jvmbenchmark.measure7.ToIntOrNotToInt.newInteger","avgt",4,10,40195909.216872,17169159.709471,"ns/op",10000
+"org.jvmbenchmark.measure7.ToIntOrNotToInt.noop","avgt",4,10,1.863932,0.976324,"ns/op",100
+"org.jvmbenchmark.measure7.ToIntOrNotToInt.noop","avgt",4,10,1.604852,1.195115,"ns/op",1000
+"org.jvmbenchmark.measure7.ToIntOrNotToInt.noop","avgt",4,10,1.481499,1.092715,"ns/op",10000
+"org.jvmbenchmark.measure7.ToIntOrNotToInt.toIntegerAuto","avgt",4,10,15924654.162527,3276466.156854,"ns/op",100
+"org.jvmbenchmark.measure7.ToIntOrNotToInt.toIntegerAuto","avgt",4,10,9625221.545206,4723147.444581,"ns/op",1000
+"org.jvmbenchmark.measure7.ToIntOrNotToInt.toIntegerAuto","avgt",4,10,13584205.082511,2452613.871748,"ns/op",10000
+"org.jvmbenchmark.measure7.ToIntOrNotToInt.toIntegerValue","avgt",4,10,20895855.924436,3580982.074711,"ns/op",100
+"org.jvmbenchmark.measure7.ToIntOrNotToInt.toIntegerValue","avgt",4,10,28879677.377832,11492009.055011,"ns/op",1000
+"org.jvmbenchmark.measure7.ToIntOrNotToInt.toIntegerValue","avgt",4,10,31364335.760796,15177943.661548,"ns/op",10000

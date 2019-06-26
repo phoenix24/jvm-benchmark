@@ -30,6 +30,12 @@ public class HelloWorld {
 
     @Benchmark
     @CompilerControl(CompilerControl.Mode.INLINE)
+    public int baseline(){
+        return 0;
+    }
+
+    @Benchmark
+    @CompilerControl(CompilerControl.Mode.INLINE)
     public int computeInline() {
         return instance.compute(0xcafebabe);
     }

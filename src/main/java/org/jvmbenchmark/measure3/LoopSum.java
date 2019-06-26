@@ -24,6 +24,10 @@ public class LoopSum {
     public int length;
 
     @Benchmark
+    public void baseline() {
+    }
+
+    @Benchmark
     public int loopsum() {
         int result = 0;
         for (int i = 0; i < length; i++) {
