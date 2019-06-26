@@ -1,5 +1,6 @@
 package org.jvmbenchmark.measure1;
 
+import org.jvmbenchmark.Utils;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.results.format.ResultFormatType;
 import org.openjdk.jmh.runner.Runner;
@@ -98,10 +99,11 @@ public class ArrayVsLinked {
     }
 
     public static void main(String[] args) throws RunnerException {
+        String report = "src/main/java/org/jvmbenchmark/measure1/" + Utils.getReportName();
         Options opt = new OptionsBuilder()
                 .include(".*" + ArrayVsLinked.class.getSimpleName() + ".*")
                 .resultFormat(ResultFormatType.CSV)
-                .result("src/main/java/org/jvmbenchmark/measure1/jmh-report.csv")
+                .result(report)
                 .shouldDoGC(false)
                 .forks(1)
                 .build();

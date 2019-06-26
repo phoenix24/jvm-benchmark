@@ -1,6 +1,7 @@
 package org.jvmbenchmark.measure4;
 
 
+import org.jvmbenchmark.Utils;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.results.format.ResultFormatType;
 import org.openjdk.jmh.runner.Runner;
@@ -64,12 +65,13 @@ public class StringConcat {
     }
 
     public static void main(String[] args) throws RunnerException {
+        String report = "src/main/java/org/jvmbenchmark/measure4/" + Utils.getReportName();
         Options opt = new OptionsBuilder()
                 .include(".*" + StringConcat.class.getSimpleName() + ".*")
                 .forks(3)
                 .shouldDoGC(false)
+                .result(report)
                 .resultFormat(ResultFormatType.CSV)
-                .result("src/main/java/org/jvmbenchmark/measure4/jmh-report.csv")
                 .build();
         new Runner(opt).run();
     }

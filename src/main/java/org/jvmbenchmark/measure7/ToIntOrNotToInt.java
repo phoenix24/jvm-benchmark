@@ -1,6 +1,7 @@
 package org.jvmbenchmark.measure7;
 
 
+import org.jvmbenchmark.Utils;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
 import org.openjdk.jmh.results.format.ResultFormatType;
@@ -61,12 +62,13 @@ public class ToIntOrNotToInt {
     }
 
     public static void main(String[] args) throws RunnerException {
+        String report = "src/main/java/org/jvmbenchmark/measure7/" + Utils.getReportName();
         Options opts = new OptionsBuilder()
                 .include(".*" + ToIntOrNotToInt.class.getSimpleName() + ".*" )
                 .forks(1)
                 .shouldDoGC(false)
                 .resultFormat(ResultFormatType.CSV)
-                .result("src/main/java/org/jvmbenchmark/measure7/jmh-report.csv")
+                .result(report)
                 .build();
 
         new Runner(opts).run();

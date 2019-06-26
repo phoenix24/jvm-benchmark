@@ -1,6 +1,7 @@
 package org.jvmbenchmark.measure6;
 
 
+import org.jvmbenchmark.Utils;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.results.format.ResultFormatType;
 import org.openjdk.jmh.runner.Runner;
@@ -48,12 +49,12 @@ public class HelloWorld {
     }
 
     public static void main(String[] args) throws RunnerException {
-
+        String report = "src/main/java/org/jvmbenchmark/measure6/" + Utils.getReportName();
         Options opts = new OptionsBuilder()
                 .include(".*" + HelloWorld.class.getSimpleName() + ".*")
                 .resultFormat(ResultFormatType.CSV)
                 .forks(1)
-                .result("src/main/java/org/jvmbenchmark/measure6/jmh-report.csv")
+                .result(report)
                 .build();
         new Runner(opts).run();
     }

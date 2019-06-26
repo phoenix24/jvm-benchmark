@@ -1,6 +1,7 @@
 package org.jvmbenchmark.measure3;
 
 
+import org.jvmbenchmark.Utils;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.results.format.ResultFormatType;
 import org.openjdk.jmh.runner.Runner;
@@ -42,11 +43,12 @@ public class LoopSum {
     }
 
     public static void main(String[] args) throws RunnerException {
+        String report = "src/main/java/org/jvmbenchmark/measure3/" + Utils.getReportName();
         Options opt = new OptionsBuilder()
                 .include(".*" + LoopSum.class.getSimpleName() + ".*")
                 .forks(1)
                 .resultFormat(ResultFormatType.CSV)
-                .result("src/main/java/org/jvmbenchmark/measure3/jmh-report.csv")
+                .result(report)
                 .build();
         new Runner(opt).run();
     }

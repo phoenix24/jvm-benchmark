@@ -1,5 +1,6 @@
 package org.jvmbenchmark.measure5;
 
+import org.jvmbenchmark.Utils;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.results.format.ResultFormatType;
 import org.openjdk.jmh.runner.Runner;
@@ -423,10 +424,11 @@ public class ToArrayClone {
     }
 
     public static void main(String[] args) throws RunnerException {
+        String report = "src/main/java/org/jvmbenchmark/measure5/" + Utils.getReportName();
         Options opts = new OptionsBuilder()
                 .include(".*" + ToArrayClone.class.getSimpleName() + ".*")
                 .forks(1)
-                .result("src/main/java/org/jvmbenchmark/measure5/jmh-report.csv")
+                .result(report)
                 .resultFormat(ResultFormatType.CSV)
                 .build();
         new Runner(opts).run();

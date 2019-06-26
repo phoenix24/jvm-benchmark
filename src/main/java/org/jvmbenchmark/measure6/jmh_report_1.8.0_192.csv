@@ -1,0 +1,3 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
+"org.jvmbenchmark.measure6.HelloWorld.computeDoNotInline","avgt",4,5,9.716685,1.887449,"ns/op"
+"org.jvmbenchmark.measure6.HelloWorld.computeInline","avgt",4,5,6.208890,0.355171,"ns/op"
