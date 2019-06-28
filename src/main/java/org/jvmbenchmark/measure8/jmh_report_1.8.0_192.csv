@@ -1,0 +1,5 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
+"org.jvmbenchmark.measure8.ToLogDebug.baseline","avgt",4,5,0.785467,0.140053,"ns/op"
+"org.jvmbenchmark.measure8.ToLogDebug.concatStrings","avgt",4,5,7175645.127214,692424.300969,"ns/op"
+"org.jvmbenchmark.measure8.ToLogDebug.withIfDebug","avgt",4,5,3727571.785321,433697.890408,"ns/op"
+"org.jvmbenchmark.measure8.ToLogDebug.withoutIfDebug","avgt",4,5,3465079.666218,122804.682571,"ns/op"

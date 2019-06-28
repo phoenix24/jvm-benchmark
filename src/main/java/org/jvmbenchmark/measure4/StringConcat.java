@@ -68,6 +68,16 @@ public class StringConcat {
                 .toString();
     }
 
+    @Benchmark
+    public String concat14() {
+        return String.format("{}", number);
+    }
+
+    @Benchmark
+    public String concat15() {
+        return String.format("{} {}", number, another3);
+    }
+
     public static void main(String[] args) throws RunnerException {
         String report = "src/main/java/org/jvmbenchmark/measure4/" + Utils.getReportName();
         Options opt = new OptionsBuilder()

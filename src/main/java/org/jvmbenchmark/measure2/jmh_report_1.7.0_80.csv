@@ -1,0 +1,5 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
+"org.jvmbenchmark.measure2.HugeMethod.baseline","avgt",4,5,4.908344,0.210677,"ns/op"
+"org.jvmbenchmark.measure2.HugeMethod.sum1395","avgt",4,5,9.837249,6.634372,"ns/op"
+"org.jvmbenchmark.measure2.HugeMethod.sum1396","avgt",4,5,8.928400,4.246277,"ns/op"
+"org.jvmbenchmark.measure2.HugeMethod.sum1397","avgt",4,5,6080.441392,3957.121673,"ns/op"
