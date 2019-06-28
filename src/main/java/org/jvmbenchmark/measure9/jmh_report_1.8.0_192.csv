@@ -1,0 +1,9 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: interval"
+"org.jvmbenchmark.measure9.WithExceptions.loopWithExceptions","avgt",4,10,495723733.743750,272530844.531358,"ns/op",10
+"org.jvmbenchmark.measure9.WithExceptions.loopWithExceptions","avgt",4,10,36318722.637956,4067203.496920,"ns/op",100
+"org.jvmbenchmark.measure9.WithExceptions.loopWithExceptions","avgt",4,10,10112322.210609,356453.039017,"ns/op",1000
+"org.jvmbenchmark.measure9.WithExceptions.loopWithExceptions","avgt",4,10,7681046.914140,212728.486497,"ns/op",10000
+"org.jvmbenchmark.measure9.WithExceptions.loopWithoutExceptions","avgt",4,10,485706.213564,165991.682561,"ns/op",10
+"org.jvmbenchmark.measure9.WithExceptions.loopWithoutExceptions","avgt",4,10,399605.389607,48026.505062,"ns/op",100
+"org.jvmbenchmark.measure9.WithExceptions.loopWithoutExceptions","avgt",4,10,476257.336448,148730.043930,"ns/op",1000
+"org.jvmbenchmark.measure9.WithExceptions.loopWithoutExceptions","avgt",4,10,464189.471694,62670.907820,"ns/op",10000
