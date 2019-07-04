@@ -8,6 +8,7 @@ import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 @Warmup(iterations = 5, time = 1, timeUnit = TimeUnit.SECONDS)
@@ -19,7 +20,7 @@ import java.util.concurrent.TimeUnit;
 @State(Scope.Benchmark)
 public class WithExceptions {
 
-    @Param({"10", "100", "1000", "10000"})
+    @Param({"0", "10", "100", "1000", "10000"})
     private int interval;
 
     @Benchmark
@@ -32,15 +33,6 @@ public class WithExceptions {
                     throw new RuntimeException("yoda!");
                 }
             } catch (Exception x) {}
-        }
-        return result;
-    }
-
-    @Benchmark
-    public int loopWithoutExceptions() {
-        int result = 0;
-        for (int i = 0; i < 1_000_000; i++) {
-            result += i;
         }
         return result;
     }
